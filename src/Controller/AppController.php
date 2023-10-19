@@ -165,4 +165,14 @@ final class AppController extends AbstractController
             self::ORDERS
         );
     }
+
+    #[Route('/oauth/id-gov-ua/redirect')]
+    public function id(): JsonResponse
+    {
+        return $this->json(
+            [
+                'msg'=> 'OK'
+            ]
+        );
+    }
 }
